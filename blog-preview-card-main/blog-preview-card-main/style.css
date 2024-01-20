@@ -1,0 +1,120 @@
+body { 
+    background-color: hsl(47, 88%, 63%);
+    display: grid;
+}
+
+.preview-box{ /*Caja Central*/
+    box-sizing: border-box;
+    height: fit-content;
+    width: 350px;
+    padding: 15px;
+    margin: auto;
+    background-color: white;
+    border-radius: 15px;
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+    box-shadow: 6px 6px black;
+}
+
+.illustration-article{ /*Imagen de Cabecera*/
+    margin: 0px auto;
+    display: flex;
+    
+}
+
+.image-article{
+    border-radius: 20px;
+    
+}
+
+.sticker{ /* Boton/Sticker de Learning*/
+    background-color: hsl(47, 88%, 63%);
+    margin-top: 20px;
+    margin-right: 220px;
+    padding: 5px;
+    box-sizing: content-box;
+    border-radius: 4px;
+    text-align: center;
+}   
+
+a { /*Texto Learning*/
+    text-decoration: none;
+    color: black;
+}
+
+.publication-date { /*Fecha de Publicacion*/
+    font-size: 12px;
+    color: grey;
+    margin-top: 15px;
+}
+
+p { /*Texto Principal*/
+    font: FigtreeItalic;
+    font-size: 15px;
+    color: grey;
+    font-weight: bolder;
+}
+
+.publication-title { /*Título de la Publicación*/
+    font-size: 20px;
+    font-family: Arial;
+    font-weight: bold;
+}
+
+.autor{
+    display:flex;
+}
+
+.autor-image{
+    box-sizing: border-box;
+    height: 50px;
+    margin-top: 15px;
+    float: left;
+}
+
+.autor-name{
+    margin-top: 27px;
+    margin-left: 10px;
+    font-family: Arial;
+    font-weight: bolder;
+}
+
+/*predeterminado*/
+.attribution { 
+    font-size: 11px;
+    text-align: center;
+    visibility: hidden; /* TEMPORALMENTE*/
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+/*predeterminado*/
+/*Font Call*/
+@font-face {
+    font-family: FigtreeItalic;
+    src:url(assets/fonts/Figtree-Italic-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: Figtree-VariableFont;
+    src: url(assets/fonts/Figtree-VariableFont_wght.ttf);
+}
+/*Font Call*/
+
+
+
+/*UNA PRUEBA TURBIA
+
+.box {
+    box-sizing: border-box; SIN ESTO SE APLICARIA A LA BOX CENTRAL (DEL CONTENIDO)
+    width: 350px; ANCHO
+    height: 150px; ALTO
+    margin: 10px; MARGEN EXTERIOR
+    padding: 25px; MARGEN INTERIOR
+    border: 5px solid black; BORDE
+}
+
+UNA PRUEBA TURBIA*/
