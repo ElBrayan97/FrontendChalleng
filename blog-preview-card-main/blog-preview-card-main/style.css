@@ -1,12 +1,10 @@
 body { 
-    background-color: hsl(47, 88%, 63%);
-    display: grid;
-}
+    /*background-color: hsl(47, 88%, 63%);*/
+    display: grid;}
 
-.preview-box{ /*Caja Central*/
-    box-sizing: border-box;
-    height: fit-content;
-    width: 350px;
+article{ /*Caja Central*/
+    box-sizing: content-box;
+    width: min-content;
     padding: 15px;
     margin: auto;
     background-color: white;
@@ -15,70 +13,66 @@ body {
     border-width: 1px;
     border-style: solid;
     box-shadow: 6px 6px black;
-}
-
-.illustration-article{ /*Imagen de Cabecera*/
-    margin: 0px auto;
     display: flex;
-    
-}
+    flex-wrap:wrap;}
 
-.image-article{
+.image-article{ /*Imagen de Cabecera*/
     border-radius: 20px;
-    
-}
+    height: 200;
+    width: 300;}
 
 .sticker{ /* Boton/Sticker de Learning*/
+    margin: 20px 0px 5px;
     background-color: hsl(47, 88%, 63%);
-    margin-top: 20px;
-    margin-right: 220px;
     padding: 5px;
-    box-sizing: content-box;
-    border-radius: 4px;
+    border-radius: 5px;
     text-align: center;
-}   
+    height: fit-content;
+    font-weight: bold;}
 
-a { /*Texto Learning*/
+.learning-label { /*Texto Learning*/
     text-decoration: none;
     color: black;
-}
+    font-family: FigtreeSemiBold;
+    font-size: 14px;}
 
 .publication-date { /*Fecha de Publicacion*/
-    font-size: 12px;
+    box-sizing: border-box;
+    font-size: 14px;
     color: grey;
-    margin-top: 15px;
-}
+    font-family: FigtreeSemiBold;
+    margin: 10px 135px 5px 0px;}
 
-p { /*Texto Principal*/
+.publication-title { /*Título de la Publicación*/
+    font-size: 20px;
+    font-family: FigtreeExtraBold;
+    font-weight: bolder;
+    margin: 0px;}
+
+article > p { /*Texto Principal*/
     font: FigtreeItalic;
     font-size: 15px;
     color: grey;
     font-weight: bolder;
-}
-
-.publication-title { /*Título de la Publicación*/
-    font-size: 20px;
-    font-family: Arial;
-    font-weight: bold;
-}
+    margin: 0px;}
 
 .autor{
-    display:flex;
-}
+    align-items:center}
 
 .autor-image{
+    justify-content: center;;
     box-sizing: border-box;
-    height: 50px;
-    margin-top: 15px;
-    float: left;
-}
+    height: 60px;
+    float: left;}
 
 .autor-name{
-    margin-top: 27px;
-    margin-left: 10px;
+    position: relative;
+    margin-top: 0px;
+    margin-left: 15px;
+    margin-right: auto;
+    margin-bottom: 0px;
     font-family: Arial;
-    font-weight: bolder;
-}
+    font-weight: bolder;}
 
 /*predeterminado*/
 .attribution { 
@@ -94,13 +88,15 @@ p { /*Texto Principal*/
 /*predeterminado*/
 /*Font Call*/
 @font-face {
-    font-family: FigtreeItalic;
-    src:url(assets/fonts/Figtree-Italic-VariableFont_wght.ttf);
+    font-family: 'FigtreeExtraBold';
+    src:url(assets/fonts/static/Figtree-ExtraBold.ttf);
+    font-weight: bolder;
 }
 
 @font-face {
-    font-family: Figtree-VariableFont;
-    src: url(assets/fonts/Figtree-VariableFont_wght.ttf);
+    font-family:'FigtreeSemiBold';
+    src:url(assets/fonts/static/Figtree-SemiBold.ttf);
+    font-weight: bold;
 }
 /*Font Call*/
 
