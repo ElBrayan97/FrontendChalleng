@@ -1,9 +1,0 @@
-{
-    "editor.minimap.autohide": false,
-    "editor.inlineSuggest.showToolbar": "always",
-    "editor.suggestSelection": "recentlyUsed",
-    "files.autoSaveDelay": 600000,
-    "files.enableTrash": false,
-    "workbench.tree.renderIndentGuides": "always",
-    "editor.peekWidgetDefaultFocus": "tree"
-}
