@@ -1,106 +1,125 @@
 body { 
-    /*background-color: hsl(47, 88%, 63%);*/
-    display: grid;}
+    background-color: hsl(47, 88%, 63%);}
 
 article{ /*Caja Central*/
     box-sizing: content-box;
     width: min-content;
-    padding: 15px;
+    padding: 20px;
     margin: auto;
-    background-color: white;
+    background-color: hsl(0, 0%, 100%);
     border-radius: 15px;
-    border-color: black;
+    border-color: hsl(0, 0%, 7%);
     border-width: 1px;
     border-style: solid;
-    box-shadow: 6px 6px black;
+    box-shadow: 6px 6px hsl(0, 0%, 7%);
     display: flex;
     flex-wrap:wrap;}
 
 .image-article{ /*Imagen de Cabecera*/
-    border-radius: 20px;
-    height: 200;
-    width: 300;}
+    border-radius: 20px;}
 
 .sticker{ /* Boton/Sticker de Learning*/
     margin: 20px 0px 5px;
     background-color: hsl(47, 88%, 63%);
-    padding: 5px;
+    padding: 5px 10px 5px 10px;
     border-radius: 5px;
     text-align: center;
     height: fit-content;
     font-weight: bold;}
 
 .learning-label { /*Texto Learning*/
-    text-decoration: none;
-    color: black;
-    font-family: FigtreeSemiBold;
+    color: hsl(0, 0%, 7%);
+    font-family: FigtreeExtraBold;
     font-size: 14px;}
 
 .publication-date { /*Fecha de Publicacion*/
     box-sizing: border-box;
     font-size: 14px;
-    color: grey;
-    font-family: FigtreeSemiBold;
+    color: hsl(0, 0%, 50%);
+    font-family: FigtreeItalic;
     margin: 10px 135px 5px 0px;}
 
 .publication-title { /*Título de la Publicación*/
+    text-decoration: none;
+    color: hsl(0, 0%, 7%);
     font-size: 20px;
+    width: 336px;
+    height: 20px;
     font-family: FigtreeExtraBold;
     font-weight: bolder;
-    margin: 0px;}
+    margin-top: 10px;
+    margin-bottom: 15px;    
+}
 
-article > p { /*Texto Principal*/
-    font: FigtreeItalic;
-    font-size: 15px;
-    color: grey;
+.publication-title:hover {
+    text-decoration: none;
+    color: hsl(47, 88%, 63%);
+    font-size: 20px;
+    width: 336px;
+    height: 20px;
+    font-family: FigtreeExtraBold;
     font-weight: bolder;
-    margin: 0px;}
+    margin-top: 10px;
+    margin-bottom: 15px; 
+}
 
-.autor{
-    align-items:center}
+.main-text-sumary { /*Texto Principal*/
+    font-family: FigtreeItalic;
+    font-size: 16px;
+    word-spacing: 6px;
+    line-height: 1.5;
+    color:hsl(0, 0%, 50%);
+    margin: 0px;
+    height: 100px;
+    overflow: hidden;}
 
-.autor-image{
-    justify-content: center;;
-    box-sizing: border-box;
-    height: 60px;
-    float: left;}
-
-.autor-name{
-    position: relative;
-    margin-top: 0px;
-    margin-left: 15px;
-    margin-right: auto;
+.autor{ /*DIV BOX Autor*/
+    display: flex;
+    box-sizing: content-box;
+    margin-top: 10px;
     margin-bottom: 0px;
-    font-family: Arial;
-    font-weight: bolder;}
+    height: 45px;
+}
+
+.autor-image{ /*Imagen del Autor*/
+    margin-top: 3px;
+    box-sizing: content-box;
+    justify-content: center;
+    height: 45px;
+    margin-right: 15px;
+    float: left;
+}
+
+.autor-name{ /*Nombre del Autor*/
+    color: hsl(0, 0%, 30%);;
+    align-self: center;
+    float: right;
+    font-size: 16px;
+    font-family: FigtreeExtraBold;
+    overflow-x: hidden;
+}
 
 /*predeterminado*/
 .attribution { 
     font-size: 11px;
     text-align: center;
-    visibility: hidden; /* TEMPORALMENTE*/
-}
+    visibility: hidden; /* TEMPORALMENTE*/}
 
 .attribution a {
-    color: hsl(228, 45%, 44%);
-}
+    color: hsl(228, 45%, 44%);}
 
 /*predeterminado*/
 /*Font Call*/
 @font-face {
     font-family: 'FigtreeExtraBold';
     src:url(assets/fonts/static/Figtree-ExtraBold.ttf);
-    font-weight: bolder;
-}
+    font-weight: 800;}
 
 @font-face {
-    font-family:'FigtreeSemiBold';
-    src:url(assets/fonts/static/Figtree-SemiBold.ttf);
-    font-weight: bold;
-}
+    font-family: 'FigtreeItalic';
+    src: url(assets/fonts/Figtree-VariableFont_wght.ttf);
+    font-weight: 600;}
 /*Font Call*/
-
-
 
 /*UNA PRUEBA TURBIA
 
@@ -110,7 +129,7 @@ article > p { /*Texto Principal*/
     height: 150px; ALTO
     margin: 10px; MARGEN EXTERIOR
     padding: 25px; MARGEN INTERIOR
-    border: 5px solid black; BORDE
+    border: 5px solid hsl(0, 0%, 7%); BORDE
 }
 
 UNA PRUEBA TURBIA*/
