@@ -38,6 +38,7 @@ button{
 button:hover{
     background-color: hsl(75, 94%, 57%);
     color: hsl(0, 0%, 12%);
+    font-family:'Inter-700';
 }
 
 .user-img{
@@ -68,7 +69,6 @@ button:hover{
     margin-top: 30px;
     margin-left: auto;
     margin-right: auto;
-    font-family: Inter;
     color: hsl(0, 0%, 100%);
     font-family: 'Inter-400';
 }
@@ -89,6 +89,12 @@ button:hover{
     font-family: 'Inter-700';
     src: url(assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
     font-weight: 700;
+}
+
+@media only screen and (max-width: 600px){
+    body{
+        background-color: hsl(0, 0%, 8%);
+    }
 }
 
 /*Footer Visibility*/
