@@ -1,0 +1,36 @@
+body{
+    align-items: center;
+    background-color: hsl(234, 29%, 20%);
+}
+
+article{
+    display: flex;
+    flex-direction: row;
+    margin: 25px auto;
+    background-color: white;
+    height: 600px;
+    width: 900px;
+    border-radius: 30px;
+    padding: 50px;
+}
+
+.text-side{
+    padding: 0px;
+    width: 500px;
+}
+
+li{
+    list-style-type: none;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.items{
+    padding: 0px;
+}
+
+li > img{
+    height: 15px;
+    padding-right: 20px;
+    padding-left: 0px;
+}
