@@ -1,11 +1,18 @@
 body{
-    align-items: center;
+    height: 100%;
+    margin: 0;
     background-color: hsl(234, 29%, 20%);
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 article{
     display: flex;
-    flex-direction: row;
     margin: 25px auto;
     background-color: white;
     height: 400px;
@@ -66,6 +73,11 @@ li > img{
     font-family: 'Roboto';
     font-weight: 700;
     text-align: center;
+    transition: background-color, 0.5s ;
+}
+
+.anchore-button:hover{
+background-color: hsl(234, 43%, 27%);
 }
 
 h1{ 
@@ -83,6 +95,7 @@ h2{
     margin-bottom: 5px;
 }
 
+/* Fuentes*/
 .roboto-regular {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
