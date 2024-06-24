@@ -7,7 +7,6 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <title>Frontend Mentor | Newsletter sign-up form with success message</title>
   <link rel="stylesheet" href="style.css">
-  <style>@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');</style>
   <script src="script.js"></script>
 </head>
   <body>
@@ -17,13 +16,15 @@
       <div class="text-side">
         <h1>Mantente Actualizado!</h1>
         <p>Encuentra mas de 60.000 gestores de producto que reciben mensualmente actualizaciones de:</p>
-        <ul class="items">
+        <ul>
           <li><img src="/FrontendChalleng/challenge_3/assets/images/icon-success.svg" alt="succes_icon">Descubrir productos y construir lo que importa</li>
           <li><img src="/FrontendChalleng/challenge_3/assets/images/icon-success.svg" alt="succes_icon">Medir para asegurar actualizaciones exitosas</li>
           <li><img src="/FrontendChalleng/challenge_3/assets/images/icon-success.svg" alt="succes_icon">Y mucho mas!</li>
         </ul>
         <h2>Direccion de E-Mail</h2>
-        <input class="input-box" id="email-input" type="email" title="email@company.com" placeholder="email@company.com">
+        <form id="emailform" action="POST">
+          <input class="input-box" id="email-input" type="email" title="email@company.com" placeholder="email@company.com">
+        </form>
         <a class="anchore-button" type="submit">Suscribirse a las noticias mensuales</a>
       </div>
       <img class="img-side" src="/FrontendChalleng/challenge_3/assets/images/illustration-sign-up-desktop.svg" alt="Illustration-img">
