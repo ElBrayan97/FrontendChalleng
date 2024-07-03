@@ -15,27 +15,28 @@ article{
     display: inherit;
     flex-direction: column;
     background-color: hsl(0, 0%, 12%);
-    height: 700px;
+    height: fit-content;
     width: 450px;
     border-radius: 10px;
     padding: 50px;
     box-sizing: border-box;
 }
 
-button{
-    border: 0px;
+.buttons-group a{
+    display: inline-block;
+    line-height: 60px;
     border-radius: 12px;
+    text-align: center;
+    text-decoration: none;
     background-color: hsl(0, 0%, 20%);
     width: 100%;
-    height:60px;
+    height: 60px;
     font-family: 'Inter-700';
     color: hsl(0, 0%, 100%);
-    font-weight: bolder;
-    font-size: 16px;
     margin-top: 15px;
 }
 
-button:hover{
+.buttons-group a:hover{
     background-color: hsl(75, 94%, 57%);
     color: hsl(0, 0%, 12%);
     font-family:'Inter-700';
@@ -48,7 +49,6 @@ button:hover{
     justify-content: center;
     height: 120px;
     width: 120px;
-    
 }
 
 .user-name{
@@ -66,9 +66,9 @@ button:hover{
 }
 
 .user-description{
-    margin-top: 30px;
-    margin-left: auto;
-    margin-right: auto;
+    text-align:center;
+    margin-top: 20px;
+    margin-bottom: 5px;
     color: hsl(0, 0%, 100%);
     font-family: 'Inter-400';
 }

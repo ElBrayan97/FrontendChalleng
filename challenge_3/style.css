@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Fuentes*/
+.roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.roboto-bold {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+body{
+    height: 100%;
+    margin: 0;
+    background-color: hsl(234, 29%, 20%);
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+article{
+    display: flex;
+    margin: 25px auto;
+    background-color: white;
+    height: 400px;
+    width: 700px;
+    border-radius: 30px;
+    padding: 20px;
+    padding-left: 50px;
+    gap: 70px;
+}
+
+.text-side{
+    padding-top: 30px;
+    width: 400px;
+}
+
+p{
+    color:hsl(235, 18%, 26%);
+    font-family: 'Roboto';
+    font-size: small;
+}
+
+ul{
+    padding: 0px;
+}
+
+li{
+    color: hsl(235, 18%, 26%);
+    list-style-type: none;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    font-size: small;
+    font-family: 'Roboto';
+    display: flex;
+    align-items: center;
+}
+
+li > img{
+    height: 18px;
+    padding-right: 20px;
+    padding-left: 0px;
+}
+
+.input-box{
+    width: 100%;
+    height: 40px;
+    border-radius: 8px;
+    border: 1px solid hsl(231, 7%, 60%);
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.anchore-button{
+    box-sizing: border-box;
+    width: 100%;
+    display: inline-block;
+    padding: 15px 20px;
+    color: white;
+    border-radius: 8px;
+    background: hsl(234, 29%, 20%);
+    text-decoration: none;
+    font-family: 'Roboto';
+    font-weight: 700;
+    text-align: center;
+}
+
+.anchore-button:hover{
+    background: linear-gradient(to right, hsl(347, 60%, 55%), hsl(4, 100%, 67%));
+}
+
+h1{ 
+    font-family: 'Roboto';
+    font-size: 35px;
+    color: hsl(234, 29%, 20%);
+    margin: 0px;
+}
+
+h2{
+    box-sizing: border-box;
+    font-size: 12px;
+    color: hsl(234, 29%, 20%);
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
