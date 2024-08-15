@@ -1,6 +1,6 @@
 var mail = document.getElementById('email-input');
-    mail.addEventListener('keypress', function(mail){
-
+    mail.addEventListener('get'{
+    
     if(validateEmail(mail)) {
         alert('Correcto!');
     }else{
@@ -11,5 +11,5 @@ var mail = document.getElementById('email-input');
 
 function validateEmail(mail){
     var validator = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return validator.test(String(mail).toLowerCase());
+
 }
